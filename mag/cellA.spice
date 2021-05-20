@@ -1,0 +1,8 @@
+* NGSPICE file created from cellA.ext - technology: sky130A
+
+.option scale=5000u
+
+.subckt cellA out
+X0 sky130_fd_pr__nfet_g5v0d10v5_CEXLE5_0/a_80_n200# sky130_fd_pr__nfet_g5v0d10v5_CEXLE5_0/a_n80_n288# sky130_fd_pr__nfet_g5v0d10v5_CEXLE5_0/a_n138_n200# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=23200 pd=916 as=23200 ps=916 w=400 l=160
+X1 sky130_fd_pr__res_high_po_0p35_L6NJBM_0/a_n35_n1132# sky130_fd_pr__res_high_po_0p35_L6NJBM_0/a_n35_700# VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
+.ends

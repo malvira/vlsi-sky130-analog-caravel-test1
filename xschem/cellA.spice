@@ -1,23 +1,12 @@
-**.subckt cellA
-XM3 vout vin GND GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+**.subckt cellA in VDD out VSS
+*.ipin in
+*.iopin VDD
+*.opin out
+*.iopin VSS
+XM3 out in VSS GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-V1 vin GND sin 2 .1 1000
-XR1 vout net1 GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
-V2 net1 GND 7
-**** begin user architecture code
-
-.param mc_mm_switch=0
-.lib /usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-.include /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hvl/spice/sky130_fd_sc_hvl.spice
-
-
-.control
-tran 1u 20m
-plot V(vin) V(vout)
-.endc
-
-**** end user architecture code
+XR1 out VDD GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
 **.ends
 .GLOBAL GND
 ** flattened .save nodes

@@ -1,0 +1,23 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1621483314
+<< metal2 >>
+rect -390 2430 40 2670
+use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
+timestamp 1621480569
+transform 0 1 742 -1 0 2619
+box -37 -1132 37 1132
+use sky130_fd_pr__nfet_g5v0d10v5_CEXLE5  sky130_fd_pr__nfet_g5v0d10v5_CEXLE5_0
+timestamp 1621480638
+transform 1 0 -252 0 1 2198
+box -138 -288 138 288
+<< labels >>
+rlabel space -144 2194 -144 2194 1 in
+port 2 n
+rlabel space -238 1936 -238 1936 1 vss
+rlabel metal2 -200 2538 -200 2538 1 out
+port 1 n
+rlabel space 1662 2616 1662 2616 1 vdd
+port 0 n
+<< end >>
