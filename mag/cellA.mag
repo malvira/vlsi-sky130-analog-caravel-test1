@@ -1,10 +1,12 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1621484808
+timestamp 1621722353
 << metal2 >>
 rect -390 2430 40 2670
-rect -404 2000 142 2398
+rect 1420 2540 1900 2694
+rect -400 2000 42 2400
+rect -340 1910 -160 1970
 use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
 timestamp 1621480569
 transform 0 1 742 -1 0 2619
@@ -14,11 +16,12 @@ timestamp 1621480638
 transform 1 0 -252 0 1 2198
 box -138 -288 138 288
 << labels >>
-rlabel metal2 -144 2194 -144 2194 1 in
-port 0 n
-rlabel space -238 1936 -238 1936 1 vss
 rlabel metal2 -200 2538 -200 2538 1 out
-port 1 n
-rlabel space 1662 2616 1662 2616 1 vdd
 port 2 n
+rlabel metal2 -166 1934 -166 1934 1 vss
+port 3 n
+rlabel metal2 -34 2194 -34 2194 1 in
+port 0 n
+rlabel metal2 1670 2560 1670 2560 1 vdd
+port 1 n
 << end >>
