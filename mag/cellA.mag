@@ -1,14 +1,20 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1621739545
+timestamp 1621807186
 << locali >>
 rect -440 2012 -344 2402
 rect -158 2258 -42 2402
 rect -158 2148 478 2258
 rect -158 2002 -42 2148
+rect 600 2096 1052 2558
 rect 2216 2134 2330 2272
+rect 2430 2076 2890 2570
 rect -330 1878 -170 1958
+use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_1
+timestamp 1621480569
+transform 0 1 1742 -1 0 2517
+box -37 -1132 37 1132
 use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
 timestamp 1621480569
 transform 0 1 1168 -1 0 2199
@@ -26,4 +32,8 @@ rlabel locali -418 2190 -418 2190 1 vss
 port 3 n
 rlabel locali -250 1902 -250 1902 1 in
 port 0 n
+rlabel locali 2672 2090 2672 2090 1 r1
+port 4 n
+rlabel locali 830 2120 830 2120 1 r2
+port 5 n
 << end >>

@@ -20,7 +20,7 @@ N 1950 -480 1950 -390 { lab=#net1}
 N 1930 -390 1950 -390 { lab=#net1}
 N 1930 -350 1950 -350 { lab=GND}
 N 1950 -350 1950 -340 { lab=GND}
-N 1930 -370 1960 -370 { lab=vin}
+N 1930 -370 1960 -370 { lab=vout}
 C {devices/gnd.sym} 1670 -270 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} 1550 -300 0 0 {name=V1 value="sin 2 .1 1000"}
 C {devices/vsource.sym} 1500 -370 0 0 {name=V2 value=7
