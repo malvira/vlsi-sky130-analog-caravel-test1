@@ -1,0 +1,2 @@
+export PDK_ROOT=/usr/share/pdk/sky130A
+export PRECHECK_ROOT=~/repos/asic/open_mpw_precheck/
