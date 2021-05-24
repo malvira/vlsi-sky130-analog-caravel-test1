@@ -11,18 +11,18 @@ rect 600 2096 1052 2558
 rect 2216 2134 2330 2272
 rect 2430 2076 2890 2570
 rect -330 1878 -170 1958
-use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_1
-timestamp 1621480569
-transform 0 1 1742 -1 0 2517
-box -37 -1132 37 1132
-use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
-timestamp 1621480569
-transform 0 1 1168 -1 0 2199
-box -37 -1132 37 1132
 use sky130_fd_pr__nfet_g5v0d10v5_CEXLE5  sky130_fd_pr__nfet_g5v0d10v5_CEXLE5_0
 timestamp 1621480638
 transform 1 0 -252 0 1 2198
 box -138 -288 138 288
+use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
+timestamp 1621480569
+transform 0 1 1168 -1 0 2199
+box -37 -1132 37 1132
+use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_1
+timestamp 1621480569
+transform 0 1 1742 -1 0 2517
+box -37 -1132 37 1132
 << labels >>
 rlabel locali -76 2186 -76 2186 1 out
 port 2 n
