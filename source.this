@@ -1,3 +1,4 @@
-export PDK_ROOT=/usr/share/pdk/sky130A
-export PRECHECK_ROOT=~/repos/asic/open_mpw_precheck/
+export PDK_ROOT=/usr/share/pdk
+export PRECHECK_ROOT=/home/malvira/repos/asic/open_mpw_precheck/
 export CARAVEL_ROOT=/home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/caravel/
+export OPENLANE_ROOT=/home/malvira/repos/asic/openlane
