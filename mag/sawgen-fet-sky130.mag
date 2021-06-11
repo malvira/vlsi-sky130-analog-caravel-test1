@@ -1,0 +1,24 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1623383988
+<< error_s >>
+rect -351 -146 -293 -140
+rect -351 -180 -339 -146
+rect -351 -186 -293 -180
+rect -351 -456 -293 -450
+rect -351 -490 -339 -456
+rect -351 -496 -293 -490
+use sky130_fd_pr__cap_var_lvt_QRK88N  sky130_fd_pr__cap_var_lvt_QRK88N_0
+timestamp 1623383988
+transform 1 0 -322 0 1 -318
+box -261 -301 261 301
+use sky130_fd_pr__nfet_g5v0d10v5_CEXLE5  sky130_fd_pr__nfet_g5v0d10v5_CEXLE5_0
+timestamp 1621480638
+transform 1 0 2504 0 1 306
+box -138 -288 138 288
+use sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5  sky130_fd_pr__cap_vpp_11p5x11p7_m1m2m3m4_shieldl1m5_0 $PDKPATH/libs.ref/sky130_fd_pr/mag
+timestamp 1620527770
+transform 1 0 -12 0 1 -12
+box 0 0 2282 2338
+<< end >>
