@@ -8,18 +8,17 @@ XM6 saw cur VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 XR8 GND cur GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
-XM1 net2 net1 saw VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM1 vd vt saw VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.8 W=16 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XM2 net2 net2 GND GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM4 vt vd GND GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XM4 net1 net2 GND GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XR3 net1 VDD GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
-XR4 GND net1 GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
-XC2 saw GND GND sky130_fd_pr__cap_var_lvt W=0.5 L=0.5 VM=1
+XR3 vt VDD GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
+XR4 GND vt GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
+C1 saw GND 1n m=1
+D1 vd net1 sky130_fd_pr__diode_pw2nd_05v5 area=1
+D2 net1 GND sky130_fd_pr__diode_pw2nd_05v5 area=1
 **** begin user architecture code
 
 
@@ -45,7 +44,7 @@ XC2 saw GND GND sky130_fd_pr__cap_var_lvt W=0.5 L=0.5 VM=1
 .ic V(saw)=0
 .control
 tran 10n 200u
-plot V(saw)  V(cur)
+plot V(saw) V(cur) V(vt) V(vd)
 //V(Vt) V(vd)
 //plot V(vd)
 //plot I(Vb)
