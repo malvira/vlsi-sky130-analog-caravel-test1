@@ -140,8 +140,6 @@ area=1
 }
 C {devices/ipin.sym} 360 -900 0 0 {name=p1 lab=VDD}
 C {devices/ipin.sym} 360 -440 0 0 {name=p2 lab=VSS}
-C {devices/iopin.sym} 0 -20 0 0 { name=p3 lab=cur }
-C {devices/iopin.sym} 0 -40 0 0 { name=p4 lab=VSS }
 C {devices/iopin.sym} 440 -620 0 1 { name=p5 lab=Rb}
 C {devices/iopin.sym} 440 -660 0 1 { name=p6 lab=Ri}
 C {devices/iopin.sym} 600 -670 0 1 { name=p7 lab=Csaw}

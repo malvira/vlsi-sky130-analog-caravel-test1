@@ -1,37 +1,69 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623527015
+timestamp 1623531770
+<< nwell >>
+rect 80 3240 130 3310
+<< locali >>
+rect -2360 3560 -1940 3640
+rect -430 3560 110 3640
+rect -2410 3020 -2310 3160
+rect -2130 3030 -2040 3160
+rect -226 3042 -134 3158
+rect 50 3050 130 3160
+rect -618 1492 -544 1994
+rect -130 -180 50 -90
 use sky130_fd_pr__pfet_g5v0d10v5_V4E25R  sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0
 timestamp 1623527015
-transform 1 0 1378 0 1 -1369
+transform 1 0 -1122 0 1 2817
 box -338 -497 338 497
-use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_0
-timestamp 1621480569
-transform 1 0 221 0 1 1030
-box -37 -1132 37 1132
-use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_2
-timestamp 1621480569
-transform 1 0 653 0 1 1930
-box -37 -1132 37 1132
-use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_1
-timestamp 1621480569
-transform 1 0 -755 0 1 1106
-box -37 -1132 37 1132
+use sky130_fd_pr__diode_pd2nw_05v5_BQJJ87  sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_0
+timestamp 1623526904
+transform 1 0 -1139 0 1 1721
+box -321 -321 321 321
+use sky130_fd_pr__diode_pd2nw_05v5_BQJJ87  sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_1
+timestamp 1623526904
+transform 1 0 -1139 0 1 1061
+box -321 -321 321 321
+use sky130_fd_pr__nfet_g5v0d10v5_UQEUHA  sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_0
+timestamp 1623526904
+transform 1 0 -1132 0 1 118
+box -308 -458 308 458
 use sky130_fd_pr__pfet_g5v0d10v5_TTPRW6  sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0
 timestamp 1623526904
-transform 1 0 -1972 0 1 1789
+transform 1 0 -2222 0 1 1557
 box -338 -1897 338 1897
 use sky130_fd_pr__pfet_g5v0d10v5_TTPRW6  sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_1
 timestamp 1623526904
-transform 1 0 2530 0 1 2267
+transform 1 0 -42 0 1 1557
 box -338 -1897 338 1897
-use sky130_fd_pr__nfet_g5v0d10v5_UQEUHA  sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_0
-timestamp 1623526904
-transform 1 0 -981 0 1 -1285
-box -308 -458 308 458
-use sky130_fd_pr__diode_pd2nw_05v5_BQJJ87  sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_0
-timestamp 1623526904
-transform 1 0 -3102 0 1 -1790
-box -321 -321 321 321
+use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_0
+timestamp 1623529677
+transform 1 0 -1643 0 1 792
+box -37 -1132 37 1132
+use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_2
+timestamp 1623529677
+transform 0 -1 -1128 1 0 3597
+box -37 -1132 37 1132
+use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_1
+timestamp 1623529677
+transform 1 0 -583 0 1 792
+box -37 -1132 37 1132
+<< labels >>
+flabel locali -2114 3114 -2114 3114 1 FreeSans 192 0 0 0 Ri
+port 3 n
+flabel locali -584 1956 -584 1956 1 FreeSans 192 0 0 0 Vb
+port 6 n
+flabel locali 80 3600 80 3600 1 FreeSans 480 0 0 0 VSS
+port 1 n
+flabel locali -2330 3600 -2330 3600 1 FreeSans 480 0 0 0 Rb
+port 2 n
+flabel locali -2390 3130 -2390 3130 1 FreeSans 480 0 0 0 VDD
+port 0 n
+flabel locali 100 3100 100 3100 1 FreeSans 480 0 0 0 Vd
+port 7 n
+flabel locali -50 -160 -50 -160 1 FreeSans 480 0 0 0 Vt
+port 5 n
+flabel locali -210 3100 -210 3100 1 FreeSans 480 0 0 0 Csaw
+port 4 n
 << end >>

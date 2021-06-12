@@ -1,0 +1,18 @@
+* SPICE3 file created from sawgen-fet-sky130.ext - technology: sky130A
+
+.option scale=5000u
+
+.subckt sawgen-fet-sky130 VDD VSS Rb Ri Csaw Vt Vb Vd
+X0 sky130_fd_pr__res_high_po_0p35_QHYJR3_0/a_n35_n1132# sky130_fd_pr__res_high_po_0p35_QHYJR3_0/a_n35_700# VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
+X1 sky130_fd_pr__res_high_po_0p35_QHYJR3_1/a_n35_n1132# Vb VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
+X2 VSS Rb VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
+X3 sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_0/a_n45_n45# sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_0/w_n183_n183# sky130_fd_pr__diode_pd2nw_05v5 area=8100
+X4 sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_1/a_n45_n45# sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_1/w_n183_n183# sky130_fd_pr__diode_pd2nw_05v5 area=8100
+X5 sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/a_80_n200# sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/a_n80_n297# sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/a_n138_n200# sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/w_n338_n497# sky130_fd_pr__pfet_g5v0d10v5 ad=23200 pd=916 as=23200 ps=916 w=400 l=160
+X6 Ri sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/a_n80_n1697# VDD sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/w_n338_n1897# sky130_fd_pr__pfet_g5v0d10v5 ad=185600 pd=6516 as=185600 ps=6516 w=3200 l=160
+X7 Vd Vt Csaw w_80_3240# sky130_fd_pr__pfet_g5v0d10v5 ad=185600 pd=6516 as=185600 ps=6516 w=3200 l=160
+X8 sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_0/a_80_n200# sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_0/a_n80_n288# sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_0/a_n138_n200# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=23200 pd=916 as=23200 ps=916 w=400 l=160
+C0 w_80_3240# VSUBS 7.70fF
+C1 sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/w_n338_n1897# VSUBS 7.69fF
+C2 sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/w_n338_n497# VSUBS 2.06fF
+.ends
