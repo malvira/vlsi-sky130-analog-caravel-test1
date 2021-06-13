@@ -52,6 +52,9 @@ N 440 -500 440 -440 { lab=VSS}
 N 440 -700 440 -660 { lab=Ri}
 N 440 -620 440 -580 { lab=Rb}
 N 770 -680 840 -680 { lab=Vt}
+N 840 -560 870 -560 { lab=VSS}
+N 870 -620 870 -560 { lab=VSS}
+N 840 -620 870 -620 { lab=VSS}
 C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 460 -780 0 1 {name=M5
 L=0.8
 W=16
@@ -103,21 +106,6 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet3_g5v0d10v5.sym} 820 -620 0 0 {name=M4
-L=0.8
-W=2
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
 C {sky130_fd_pr/res_high_po_0p35.sym} 970 -730 0 0 {name=R3
 W=0.35
 L=20
@@ -146,3 +134,17 @@ C {devices/iopin.sym} 600 -670 0 1 { name=p7 lab=Csaw}
 C {devices/iopin.sym} 840 -680 0 0 { name=p8 lab=Vt}
 C {devices/iopin.sym} 970 -660 0 0 { name=p9 lab=Vb}
 C {devices/iopin.sym} 730 -610 0 1 { name=p10 lab=Vd}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 820 -620 0 0 {name=M4
+L=0.8
+W=2
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}

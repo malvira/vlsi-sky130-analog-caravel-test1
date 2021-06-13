@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623535931
+timestamp 1623553027
 << error_s >>
 rect -626 2156 -620 2162
 rect -540 2156 -534 2162
@@ -17,17 +17,21 @@ rect -626 2058 -620 2064
 rect -540 2058 -534 2064
 rect -1236 -90 -1220 -86
 rect -1208 -118 -1192 -114
-<< nwell >>
-rect 80 3240 130 3310
 << locali >>
 rect -2360 3560 -1940 3640
 rect -430 3560 110 3640
-rect -2410 -40 -2310 3160
+rect -2410 3150 -2310 3160
 rect -2116 3156 -2040 3160
+rect -2480 -40 -2310 3150
 rect -2130 -40 -2040 3156
 rect -226 3042 -134 3158
 rect 50 3050 130 3160
-rect -620 1890 -540 2070
+rect -1390 2610 -1230 3020
+rect -630 2150 -250 2160
+rect -630 2070 -620 2150
+rect -540 2070 -250 2150
+rect -630 2060 -250 2070
+rect -620 1890 -540 2060
 rect -1170 1830 -1110 1850
 rect -618 1492 -544 1890
 rect -1170 1170 -1110 1180
@@ -123,6 +127,10 @@ rect -790 430 -710 436
 rect -710 350 -90 430
 rect -10 350 -4 430
 rect -790 344 -710 350
+use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_0
+timestamp 1623529677
+transform -1 0 -1643 0 -1 792
+box -37 -1132 37 1132
 use sky130_fd_pr__pfet_g5v0d10v5_V4E25R  sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0
 timestamp 1623527015
 transform 1 0 -1122 0 1 2817
@@ -147,10 +155,6 @@ use sky130_fd_pr__pfet_g5v0d10v5_TTPRW6  sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_1
 timestamp 1623526904
 transform 1 0 -42 0 1 1557
 box -338 -1897 338 1897
-use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_0
-timestamp 1623529677
-transform 1 0 -1643 0 1 792
-box -37 -1132 37 1132
 use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_2
 timestamp 1623529677
 transform 0 -1 -1128 1 0 3597
@@ -160,20 +164,20 @@ timestamp 1623529677
 transform 1 0 -583 0 1 792
 box -37 -1132 37 1132
 << labels >>
-flabel locali 80 3600 80 3600 1 FreeSans 480 0 0 0 VSS
-port 1 n
-flabel locali -2390 3130 -2390 3130 1 FreeSans 480 0 0 0 VDD
-port 0 n
 flabel locali 100 3100 100 3100 1 FreeSans 480 0 0 0 Vd
-port 7 n
+port 4 n
 flabel locali -50 -160 -50 -160 1 FreeSans 480 0 0 0 Vt
 port 5 n
 flabel locali -210 3100 -210 3100 1 FreeSans 480 0 0 0 Csaw
-port 4 n
+port 7 n
 flabel locali -2070 3120 -2070 3120 1 FreeSans 480 0 0 0 Ri
-port 3 n
+port 1 n
 flabel locali -2330 3600 -2330 3600 1 FreeSans 480 0 0 0 Rb
 port 2 n
 flabel metal1 -1130 -320 -1130 -320 1 FreeSans 480 0 0 0 Vb
 port 6 n
+flabel metal1 80 3600 80 3600 1 FreeSans 480 0 0 0 vss
+port 3 n
+flabel metal1 -2390 3130 -2390 3130 1 FreeSans 480 0 0 0 vdd
+port 0 n
 << end >>

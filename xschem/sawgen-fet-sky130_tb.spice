@@ -41,34 +41,37 @@ plot V(saw) V(cur) V(vt) V(vd)
 *+ /home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/xschem/sawgen-fet-sky130.sym
 * sch_path:
 *+ /home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/xschem/sawgen-fet-sky130.sch
-.subckt sawgen-fet-sky130  vdd Ri Rb vss Vd vt vb Csaw
+.subckt sawgen-fet-sky130  vdd Ri Rb vss Vd Vt Vb Csaw
 *.ipin VDD
 *.ipin VSS
-*.iopin cur
-*.iopin VSS
 *.iopin Rb
 *.iopin Ri
 *.iopin Csaw
 *.iopin Vt
 *.iopin Vb
 *.iopin Vd
+
 XM5 Ri Ri VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.8 W=16 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 XM6 Csaw Ri VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XR8 VSS Rb VSS sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
+
 XM1 Vd Vt Csaw VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.8 W=16 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XM4 Vt Vd VSS GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
+
+XR8 VSS Rb VSS sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
 XR3 Vb VDD VSS sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
 XR4 VSS Vb VSS sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
-D1 Vd net1 sky130_fd_pr__diode_pw2nd_05v5 area=1
-D2 net1 VSS sky130_fd_pr__diode_pw2nd_05v5 area=1
+//D1 Vd net1 sky130_fd_pr__diode_pw2nd_05v5 area=1
+//D2 net1 VSS sky130_fd_pr__diode_pw2nd_05v5 area=1
+
+XM4 Vt Vd VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+
 .ends
 
 .GLOBAL VDD

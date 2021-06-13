@@ -2,21 +2,16 @@
 
 .option scale=5000u
 
-.subckt sawgen-fet-sky130 VDD VSS Rb Ri Csaw Vt Vb Vd
-X0 Vb VSS VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
-X1 Vb VDD VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
-X2 VSS Rb VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
-X3 li_n1170_1170# VSS sky130_fd_pr__diode_pd2nw_05v5 area=8100
-X4 Vd li_n1170_1170# sky130_fd_pr__diode_pd2nw_05v5 area=8100
-X5 Csaw Ri VDD sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/w_n338_n497# sky130_fd_pr__pfet_g5v0d10v5 ad=208800 pd=7432 as=208800 ps=7432 w=400 l=160
-X6 Ri Ri VDD sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/w_n338_n1897# sky130_fd_pr__pfet_g5v0d10v5 ad=185600 pd=6516 as=0 ps=0 w=3200 l=160
-X7 Vd Vt Csaw w_80_3240# sky130_fd_pr__pfet_g5v0d10v5 ad=185600 pd=6516 as=0 ps=0 w=3200 l=160
-X8 Vt Vd VSS VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=23200 pd=916 as=23200 ps=916 w=400 l=160
-C0 Ri sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/w_n338_n1897# 3.14fF
-C1 VDD sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/w_n338_n1897# 3.37fF
-C2 Ri VSUBS 3.09fF
-C3 VDD VSUBS 2.14fF
-C4 w_80_3240# VSUBS 7.70fF
-C5 sky130_fd_pr__pfet_g5v0d10v5_TTPRW6_0/w_n338_n1897# VSUBS 7.69fF
-C6 sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0/w_n338_n497# VSUBS 2.06fF
+.subckt sawgen-fet-sky130 vdd Ri Rb vss Vd Vt Vb Csaw
+X0 vss Vb vss sky130_fd_pr__res_high_po_0p35 l=1400
+X1 Vb vdd vss sky130_fd_pr__res_high_po_0p35 l=1400
+X2 vss Rb vss sky130_fd_pr__res_high_po_0p35 l=1400
+
+//X3 li_n1170_1170# vss sky130_fd_pr__diode_pd2nw_05v5 area=8100
+//X4 Vd li_n1170_1170# sky130_fd_pr__diode_pd2nw_05v5 area=8100
+
+X5 Csaw Ri vdd vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
+X6 Ri Ri vdd vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3200 l=160
+X7 Vd Vt Csaw vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3200 l=160
+X8 Vt Vd vss vss sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
 .ends
