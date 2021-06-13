@@ -38,10 +38,8 @@ N 600 -900 600 -860 { lab=VDD}
 N 440 -900 600 -900 { lab=VDD}
 N 970 -900 970 -860 { lab=VDD}
 N 600 -900 970 -900 { lab=VDD}
-N 440 -440 970 -440 { lab=VSS}
 N 970 -520 970 -440 { lab=VSS}
 N 840 -520 840 -440 { lab=VSS}
-N 730 -480 730 -440 { lab=VSS}
 N 600 -610 600 -440 { lab=VSS}
 N 930 -600 930 -440 { lab=VSS}
 N 400 -550 400 -500 { lab=VSS}
@@ -55,6 +53,14 @@ N 770 -680 840 -680 { lab=Vt}
 N 840 -560 870 -560 { lab=VSS}
 N 870 -620 870 -560 { lab=VSS}
 N 840 -620 870 -620 { lab=VSS}
+N 730 -600 730 -580 { lab=Vd}
+N 730 -520 730 -500 { lab=VSS}
+N 690 -590 690 -550 { lab=Vd}
+N 690 -590 730 -590 { lab=Vd}
+N 440 -440 970 -440 { lab=VSS}
+N 730 -550 760 -550 { lab=VSS}
+N 760 -550 760 -440 { lab=VSS}
+N 730 -500 730 -440 { lab=VSS}
 C {sky130_fd_pr/pfet3_g5v0d10v5.sym} 460 -780 0 1 {name=M5
 L=0.8
 W=16
@@ -118,14 +124,6 @@ L=20
 model=res_high_po_0p35
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/diode.sym} 730 -570 2 0 {name=D1
-model=diode_pw2nd_05v5
-area=1
-}
-C {sky130_fd_pr/diode.sym} 730 -510 2 0 {name=D2
-model=diode_pw2nd_05v5
-area=1
-}
 C {devices/ipin.sym} 360 -900 0 0 {name=p1 lab=VDD}
 C {devices/ipin.sym} 360 -440 0 0 {name=p2 lab=VSS}
 C {devices/iopin.sym} 440 -620 0 1 { name=p5 lab=Rb}
@@ -135,6 +133,20 @@ C {devices/iopin.sym} 840 -680 0 0 { name=p8 lab=Vt}
 C {devices/iopin.sym} 970 -660 0 0 { name=p9 lab=Vb}
 C {devices/iopin.sym} 730 -610 0 1 { name=p10 lab=Vd}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 820 -620 0 0 {name=M4
+L=0.8
+W=2
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 710 -550 0 0 {name=M2
 L=0.8
 W=2
 nf=1
