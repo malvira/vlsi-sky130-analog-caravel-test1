@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1623553027
+timestamp 1623598139
 << error_s >>
 rect -626 2156 -620 2162
 rect -540 2156 -534 2162
@@ -32,14 +32,10 @@ rect -630 2070 -620 2150
 rect -540 2070 -250 2150
 rect -630 2060 -250 2070
 rect -620 1890 -540 2060
-rect -1170 1830 -1110 1850
 rect -618 1492 -544 1890
-rect -1170 1170 -1110 1180
 rect -130 -180 50 -90
 << viali >>
 rect -620 2070 -540 2150
-rect -1170 1850 -1110 1910
-rect -1170 1180 -1110 1240
 << metal1 >>
 rect -430 3560 130 3661
 rect -417 3515 -343 3560
@@ -66,22 +62,16 @@ rect -1036 2752 -130 2848
 rect -1030 2610 -130 2752
 rect -950 2600 -130 2610
 rect -1679 2279 -1601 2285
-rect -1679 2150 -1601 2201
-rect -1679 2090 -1110 2150
-rect -1679 270 -1601 2090
-rect -1170 1916 -1110 2090
+rect -1679 1299 -1601 2201
 rect -632 2064 -626 2156
 rect -534 2064 -528 2156
-rect -1182 1910 -1098 1916
-rect -1182 1850 -1170 1910
-rect -1110 1850 -1098 1910
-rect -1182 1844 -1098 1850
-rect -1170 1246 -1110 1760
-rect -1182 1240 -1098 1246
-rect -1182 1180 -1170 1240
-rect -1110 1180 -1098 1240
-rect -1182 1174 -1098 1180
-rect -1180 430 -1100 1100
+rect -1299 1299 -1221 1469
+rect -1679 1221 -1221 1299
+rect -1679 270 -1601 1221
+rect -1299 1071 -1221 1221
+rect -1060 1040 -980 1470
+rect -1250 960 -980 1040
+rect -1180 430 -1100 960
 rect -1210 350 -790 430
 rect -710 350 -704 430
 rect -1300 270 -1220 320
@@ -127,6 +117,10 @@ rect -790 430 -710 436
 rect -710 350 -90 430
 rect -10 350 -4 430
 rect -790 344 -710 350
+use sky130_fd_pr__nfet_g5v0d10v5_UQEUHA  sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_1
+timestamp 1623526904
+transform 1 0 -1132 0 1 1268
+box -308 -458 308 458
 use sky130_fd_pr__res_high_po_0p35_QHYJR3  sky130_fd_pr__res_high_po_0p35_QHYJR3_0
 timestamp 1623529677
 transform -1 0 -1643 0 -1 792
@@ -135,14 +129,6 @@ use sky130_fd_pr__pfet_g5v0d10v5_V4E25R  sky130_fd_pr__pfet_g5v0d10v5_V4E25R_0
 timestamp 1623527015
 transform 1 0 -1122 0 1 2817
 box -338 -497 338 497
-use sky130_fd_pr__diode_pd2nw_05v5_BQJJ87  sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_0
-timestamp 1623526904
-transform 1 0 -1139 0 1 1721
-box -321 -321 321 321
-use sky130_fd_pr__diode_pd2nw_05v5_BQJJ87  sky130_fd_pr__diode_pd2nw_05v5_BQJJ87_1
-timestamp 1623526904
-transform 1 0 -1139 0 1 1061
-box -321 -321 321 321
 use sky130_fd_pr__nfet_g5v0d10v5_UQEUHA  sky130_fd_pr__nfet_g5v0d10v5_UQEUHA_0
 timestamp 1623526904
 transform 1 0 -1132 0 1 118

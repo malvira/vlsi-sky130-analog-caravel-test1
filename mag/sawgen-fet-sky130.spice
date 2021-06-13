@@ -6,12 +6,9 @@
 X0 vss Vb vss sky130_fd_pr__res_high_po_0p35 l=1400
 X1 Vb vdd vss sky130_fd_pr__res_high_po_0p35 l=1400
 X2 vss Rb vss sky130_fd_pr__res_high_po_0p35 l=1400
-
-//X3 li_n1170_1170# vss sky130_fd_pr__diode_pd2nw_05v5 area=8100
-//X4 Vd li_n1170_1170# sky130_fd_pr__diode_pd2nw_05v5 area=8100
-
-X5 Csaw Ri vdd vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
-X6 Ri Ri vdd vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3200 l=160
-X7 Vd Vt Csaw vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3200 l=160
-X8 Vt Vd vss vss sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
+X3 Csaw Ri vdd vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
+X4  Ri Ri vdd vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3200 l=160
+X5 Vd Vt Csaw vdd sky130_fd_pr__pfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=3200 l=160
+X6 Vt Vd vss vss sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
+X7 Vd Vd vss vss sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
 .ends
