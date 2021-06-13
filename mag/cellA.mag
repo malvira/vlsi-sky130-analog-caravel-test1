@@ -1,28 +1,36 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1622426105
+timestamp 1623612887
 << locali >>
 rect -440 2012 -344 2402
-rect -158 2258 -64 2402
-rect -158 2148 478 2258
-rect -158 2002 -64 2148
+rect -158 2002 -64 2402
+rect 92 2148 368 2258
 rect 600 2096 1052 2558
 rect 2262 2100 2376 2238
 rect 2430 2076 2890 2570
 rect -330 1878 -170 1958
-use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_1
-timestamp 1621480569
-transform 0 1 1732 -1 0 2523
-box -37 -1132 37 1132
-use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
-timestamp 1621480569
-transform 0 1 1244 -1 0 2201
-box -37 -1132 37 1132
+<< viali >>
+rect 368 2148 478 2258
+<< metal1 >>
+rect -167 2258 -57 2403
+rect 362 2258 484 2270
+rect -167 2148 368 2258
+rect 478 2148 484 2258
+rect -167 2001 -57 2148
+rect 362 2136 484 2148
 use sky130_fd_pr__nfet_g5v0d10v5_UDRKLA  sky130_fd_pr__nfet_g5v0d10v5_UDRKLA_0
 timestamp 1622424720
 transform 1 0 -256 0 1 2200
 box -308 -458 308 458
+use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_0
+timestamp 1621480569
+transform 0 1 1244 -1 0 2201
+box -37 -1132 37 1132
+use sky130_fd_pr__res_high_po_0p35_L6NJBM  sky130_fd_pr__res_high_po_0p35_L6NJBM_1
+timestamp 1621480569
+transform 0 1 1732 -1 0 2523
+box -37 -1132 37 1132
 << labels >>
 rlabel locali -76 2186 -76 2186 1 out
 port 2 n

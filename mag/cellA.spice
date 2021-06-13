@@ -3,7 +3,7 @@
 .option scale=5000u
 
 .subckt cellA in vdd out vss r1 r2
-X0 out in vss VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=23200 pd=916 as=23200 ps=916 w=400 l=160
+X0 out in vss VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0 pd=0 as=0 ps=0 w=400 l=160
 X1 out vdd VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
 X2 r2 r1 VSUBS sky130_fd_pr__res_high_po_0p35 l=1400
 .ends

@@ -207,27 +207,9 @@ plot V(io_out[11]) V(io_out[12]) V(io_out[15]) V(io_out[16])  V(gpio_analog[3]) 
 *.opin user_irq[2],user_irq[1],user_irq[0]
 *.ipin
 *+ la_oenb[127],la_oenb[126],la_oenb[125],la_oenb[124],la_oenb[123],la_oenb[122],la_oenb[121],la_oenb[120],la_oenb[119],la_oenb[118],la_oenb[117],la_oenb[116],la_oenb[115],la_oenb[114],la_oenb[113],la_oenb[112],la_oenb[111],la_oenb[110],la_oenb[109],la_oenb[108],la_oenb[107],la_oenb[106],la_oenb[105],la_oenb[104],la_oenb[103],la_oenb[102],la_oenb[101],la_oenb[100],la_oenb[99],la_oenb[98],la_oenb[97],la_oenb[96],la_oenb[95],la_oenb[94],la_oenb[93],la_oenb[92],la_oenb[91],la_oenb[90],la_oenb[89],la_oenb[88],la_oenb[87],la_oenb[86],la_oenb[85],la_oenb[84],la_oenb[83],la_oenb[82],la_oenb[81],la_oenb[80],la_oenb[79],la_oenb[78],la_oenb[77],la_oenb[76],la_oenb[75],la_oenb[74],la_oenb[73],la_oenb[72],la_oenb[71],la_oenb[70],la_oenb[69],la_oenb[68],la_oenb[67],la_oenb[66],la_oenb[65],la_oenb[64],la_oenb[63],la_oenb[62],la_oenb[61],la_oenb[60],la_oenb[59],la_oenb[58],la_oenb[57],la_oenb[56],la_oenb[55],la_oenb[54],la_oenb[53],la_oenb[52],la_oenb[51],la_oenb[50],la_oenb[49],la_oenb[48],la_oenb[47],la_oenb[46],la_oenb[45],la_oenb[44],la_oenb[43],la_oenb[42],la_oenb[41],la_oenb[40],la_oenb[39],la_oenb[38],la_oenb[37],la_oenb[36],la_oenb[35],la_oenb[34],la_oenb[33],la_oenb[32],la_oenb[31],la_oenb[30],la_oenb[29],la_oenb[28],la_oenb[27],la_oenb[26],la_oenb[25],la_oenb[24],la_oenb[23],la_oenb[22],la_oenb[21],la_oenb[20],la_oenb[19],la_oenb[18],la_oenb[17],la_oenb[16],la_oenb[15],la_oenb[14],la_oenb[13],la_oenb[12],la_oenb[11],la_oenb[10],la_oenb[9],la_oenb[8],la_oenb[7],la_oenb[6],la_oenb[5],la_oenb[4],la_oenb[3],la_oenb[2],la_oenb[1],la_oenb[0]
-x3 io_analog[8] io_analog[7] io_analog[6] vssa2 io_analog[10] io_analog[9] cellA
-x1 io_analog[8] io_analog[5] io_analog[4] vssa2 io_analog[2] io_analog[1] io_analog[0] io_analog[3]
+x1 io_analog[8] io_analog[5] io_analog[4] vssa1 io_analog[2] io_analog[1] io_analog[0] io_analog[3]
 + sawgen-fet-sky130
-.ends
-
-
-* expanding   symbol:  cellA.sym # of pins=6
-* sym_path: /home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/xschem/cellA.sym
-* sch_path: /home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/xschem/cellA.sch
-.subckt cellA  VDD out in VSS R2 R1
-*.ipin in
-*.iopin VDD
-*.opin out
-*.iopin VSS
-*.iopin R1
-*.iopin R2
-XM3 out in VSS GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
-+ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
-+ sa=0 sb=0 sd=0 mult=1 m=1 
-XR1 out VDD GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
-XR2 R2 R1 GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
+x2 io_analog[6] io_analog[8] io_analog[7] vssa1 io_analog[9] io_analog[10] cellA
 .ends
 
 
@@ -263,6 +245,24 @@ XM4 Vt Vd VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) 
 XM2 Vd Vd VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
+.ends
+
+
+* expanding   symbol:  cellA.sym # of pins=6
+* sym_path: /home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/xschem/cellA.sym
+* sch_path: /home/malvira/repos/asic/projects/vlsi-sky130-analog-caravel-test1/xschem/cellA.sch
+.subckt cellA  VDD out in VSS R2 R1
+*.ipin in
+*.iopin VDD
+*.opin out
+*.iopin VSS
+*.iopin R1
+*.iopin R2
+XM3 out in VSS GND sky130_fd_pr__nfet_g5v0d10v5 L=0.8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 out VDD GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
+XR2 R2 R1 GND sky130_fd_pr__res_high_po_0p35 W=0.35 L=20 mult=1 m=1
 .ends
 
 .GLOBAL GND

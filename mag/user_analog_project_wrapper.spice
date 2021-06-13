@@ -108,7 +108,7 @@
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-XcellA_1 io_analog[6] io_analog[8] io_analog[7] vssa2 io_analog[9] io_analog[10] cellA
+XcellA_1 io_analog[6] io_analog[8] io_analog[7] vssa1 io_analog[9] io_analog[10] cellA
 Xsawgen-fet-sky130_0 io_analog[8] io_analog[5] io_analog[4] vssa1 io_analog[2] io_analog[1]
 + io_analog[0] io_analog[3] sawgen-fet-sky130
 .ends

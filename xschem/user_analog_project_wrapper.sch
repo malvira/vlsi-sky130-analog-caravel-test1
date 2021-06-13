@@ -11,11 +11,11 @@ N 3940 440 3960 440 { lab=io_analog[10]}
 N 3940 400 3940 440 { lab=io_analog[10]}
 N 4020 330 4070 330 { lab=io_analog[8]}
 N 4020 350 4070 350 { lab=io_analog[7]}
-N 4020 370 4070 370 { lab=vssa2}
+N 4020 370 4070 370 { lab=vssa1}
 N 3740 40 3760 40 { lab=io_analog[8]}
 N 3740 60 3760 60 { lab=io_analog[5]}
 N 3740 80 3760 80 { lab=io_analog[4]}
-N 3740 100 3760 100 { lab=vssa2}
+N 3740 100 3760 100 { lab=vssa1}
 N 3850 150 3850 170 { lab=io_analog[2]}
 N 3880 150 3880 170 { lab=io_analog[1]}
 N 3910 150 3910 170 { lab=io_analog[0]}
@@ -52,8 +52,7 @@ C {devices/iopin.sym} 3250 500 0 0 {name=p30 lab=io_clamp_high[2:0]}
 C {devices/iopin.sym} 3250 530 0 0 {name=p31 lab=io_clamp_low[2:0]}
 C {devices/opin.sym} 3270 600 0 0 {name=p32 lab=user_irq[2:0]}
 C {devices/ipin.sym} 3290 210 0 0 {name=p28 lab=la_oenb[127:0]}
-C {cellA.sym} 3870 350 0 0 {name=x3}
-C {devices/lab_pin.sym} 4070 370 0 1 {name=l13 sig_type=std_logic lab=vssa2}
+C {devices/lab_pin.sym} 4070 370 0 1 {name=l13 sig_type=std_logic lab=vssa1}
 C {devices/lab_pin.sym} 4070 330 0 1 {name=l14 sig_type=std_logic lab=io_analog[8]}
 C {devices/lab_pin.sym} 3690 330 0 0 {name=l15 sig_type=std_logic lab=io_analog[6]}
 C {devices/lab_pin.sym} 3900 440 3 0 {name=l16 sig_type=std_logic lab=io_analog[9]}
@@ -68,3 +67,4 @@ C {devices/lab_pin.sym} 3850 170 3 0 {name=l5 sig_type=std_logic lab=io_analog[2
 C {devices/lab_pin.sym} 3880 170 3 0 {name=l6 sig_type=std_logic lab=io_analog[1]}
 C {devices/lab_pin.sym} 3910 170 3 0 {name=l7 sig_type=std_logic lab=io_analog[0]}
 C {devices/lab_pin.sym} 4020 80 2 0 {name=l8 sig_type=std_logic lab=io_analog[3]}
+C {cellA.sym} 3870 350 0 0 {name=x2}
