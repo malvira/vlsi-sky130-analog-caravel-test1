@@ -12,6 +12,14 @@ N 3940 400 3940 440 { lab=io_analog[10]}
 N 4020 330 4070 330 { lab=io_analog[8]}
 N 4020 350 4070 350 { lab=io_analog[7]}
 N 4020 370 4070 370 { lab=vssa2}
+N 3740 40 3760 40 {}
+N 3740 60 3760 60 {}
+N 3740 80 3760 80 {}
+N 3740 100 3760 100 {}
+N 3850 150 3850 170 {}
+N 3880 150 3880 170 {}
+N 3910 150 3910 170 {}
+N 4000 80 4020 80 {}
 C {devices/iopin.sym} 3240 -470 0 0 {name=p1 lab=vdda1}
 C {devices/iopin.sym} 3240 -440 0 0 {name=p2 lab=vdda2}
 C {devices/iopin.sym} 3240 -410 0 0 {name=p3 lab=vssa1}
@@ -51,3 +59,12 @@ C {devices/lab_pin.sym} 3690 330 0 0 {name=l15 sig_type=std_logic lab=io_analog[
 C {devices/lab_pin.sym} 3900 440 3 0 {name=l16 sig_type=std_logic lab=io_analog[9]}
 C {devices/lab_pin.sym} 3960 440 3 0 {name=l17 sig_type=std_logic lab=io_analog[10]}
 C {devices/lab_pin.sym} 4070 350 0 1 {name=l18 sig_type=std_logic lab=io_analog[7]}
+C {sawgen-fet-sky130.sym} 3910 50 0 0 {name=x1}
+C {devices/lab_pin.sym} 3740 40 0 0 {name=l1 sig_type=std_logic lab=io_analog[8]}
+C {devices/lab_pin.sym} 3740 60 0 0 {name=l2 sig_type=std_logic lab=io_analog[5]}
+C {devices/lab_pin.sym} 3740 80 0 0 {name=l3 sig_type=std_logic lab=io_analog[4]}
+C {devices/lab_pin.sym} 3740 100 0 0 {name=l4 sig_type=std_logic lab=vssa2}
+C {devices/lab_pin.sym} 3850 170 3 0 {name=l5 sig_type=std_logic lab=io_analog[2]}
+C {devices/lab_pin.sym} 3880 170 3 0 {name=l6 sig_type=std_logic lab=io_analog[1]}
+C {devices/lab_pin.sym} 3910 170 3 0 {name=l7 sig_type=std_logic lab=io_analog[0]}
+C {devices/lab_pin.sym} 4020 80 2 0 {name=l8 sig_type=std_logic lab=io_analog[3]}

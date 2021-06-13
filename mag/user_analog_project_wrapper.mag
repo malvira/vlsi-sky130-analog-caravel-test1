@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1622426286
+timestamp 1623599163
 << locali >>
 rect 68742 687312 68856 687469
 rect 68182 687032 68642 687298
@@ -819,6 +819,10 @@ rect -100 704000 584100 704100
 rect -100 0 0 704000
 rect 584000 0 584100 704000
 rect -100 -100 584100 0
+use sawgen-fet-sky130  sawgen-fet-sky130_0
+timestamp 1623598139
+transform 1 0 489820 0 1 646860
+box -2560 -340 296 3661
 use cellA  cellA_1
 timestamp 1622426105
 transform -1 0 71072 0 -1 689584
