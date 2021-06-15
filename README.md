@@ -4,14 +4,13 @@
 
 ---
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+Two simple analog test circuits.
 
-## Please fill in your project documentation in this README.md file 
+The first, CellA, is a common source amplifier w/ resistor load and a test resistor of same value.
 
+The second is a sawtooth generator.
 
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
+This is tag mpw-2
 
 ---
 
